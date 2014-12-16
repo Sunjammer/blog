@@ -40,13 +40,14 @@ body {
   font-size: 1em;
   line-height: 1.4;
   min-width: 280px;
+  max-width: 1050px;
 }
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 ::selection {
-  background: #b3d4fc;
+  background: #eee;
   text-shadow: none;
 }
 hr {
@@ -276,6 +277,11 @@ select,
 textarea {
   font-family: sans-serif;
 }
+
+icons {
+  margin-left: 50px;
+}
+
 /**
  * Address margins handled incorrectly in IE 6/7.
  */
@@ -359,6 +365,7 @@ dfn {
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+  max-width: 1040px;
   height: 0;
 }
 /**
