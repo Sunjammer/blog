@@ -1,0 +1,9 @@
+<section>
+	<div>
+		<h4>{{ctrl.model.title}}</h4>
+		<h5>{{ctrl.model.summary}}</h5>
+		<img class="projectViewImage" ng-src="{{ctrl.model.image}}"></img><br/>
+		<p ng-bind-html="ctrl.model.body | sanitize"></p>
+		<p ng-bind-html="ctrl.model.addendum | sanitize"></p>
+	</div>
+</section>
