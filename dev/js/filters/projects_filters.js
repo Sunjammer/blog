@@ -1,9 +1,12 @@
 (function(){
 
-	angular.module("resume").filter("sanitize", ['$sce', function($sce) {
-		return function(htmlCode){
-			return $sce.trustAsHtml(htmlCode);
-		};
-	}]);
+	angular.module('resume')
+		.filter('markdown', ['$sce', function($sce) {
+		    var converter = new Showdown.converter();
+		    return function (value) {
+				var html = converter.makeHtml(value || '');
+		        return $sce.trustAsHtml(html);
+		    };
+		}]);
 
 })();

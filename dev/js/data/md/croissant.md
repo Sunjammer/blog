@@ -1,0 +1,3 @@
+Initially an exploration into the performance benefits of native code built from Haxe versus the mobile AIR runtime, Croissant Engine has been a labor of love for years. Characteristically feature-bloated as such things tend to be, Croissant has become game development boilerplate for personal projects, as well as a starting point for client work such as Inky & Smudge.  
+
+Though at its core a performant sprite based engine, Croissant supports deformable 3D meshes, multi-resolution sprite sheets using its own GTS texture format with inline animation data, signed distance field font rendering, a full multitouch control solution, in-depth scripting, music playback with loop sections and transitions, listener/source stereo sound effect system and more.
