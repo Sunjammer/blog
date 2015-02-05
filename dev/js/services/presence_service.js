@@ -1,38 +1,19 @@
 (function(){
 
-	var model = {
-		links : 
-		[
-			{
-				name:"GitHub",
-				url:"http://github.com/Sunjammer",
-				image:"img/icons/GitHub-Mark-64px.png"
-			},
-			{
-				name:"Twitter",
-				url:"https://twitter.com/sunjammer",
-				image:"img/icons/twitter.png"
-			},
-			{
-				name:"Google+",
-				url:"https://plus.google.com/u/1/+AndreasR%C3%B8nning/posts",
-				image:"img/icons/gplus.png"
-			},
-			{
-				name:"SoundCloud",
-				url:"https://soundcloud.com/doomsday/",
-				image:"img/icons/soundcloud.png"
-			},
-			{
-				name:"LinkedIn",
-				url:"https://www.linkedin.com/pub/andreas-r%C3%B8nning/67/238/ab8",
-				image:"img/icons/linkedin.jpg"
-			}
-		]
+	var model = { links : [] };
+
+	var jsonResponseHandler = function(response){
+		model.links = response.data.links;
 	};
 
-	var presenceLinksService = function(){
+	var loadLinksList = function($http){
+		http = $http;
+		http.get( 'data/links.json' ).then( jsonResponseHandler );
+	};
+
+	var presenceLinksService = function($http){
 		this.model = model;
+		loadLinksList($http, this);
 		return this;
 	};
 

@@ -31,9 +31,9 @@
 		<hr />
 		<section>
 			<intro>
-				<p>I’m an independent, multidisciplinary developer with a history of diverse, successful projects of varying scale.</p>
-				<p>Since 2001 I’ve gained significant experience crafting solutions for advertising, installations, game development, in-house tooling and mobile experiences, straddling the front and back ends with an emphasis on improving team cohesion and workflow.</p>
-				<p>I’m proud, driven, impassioned, quick to learn and result-oriented, caring as much about the process and the work environment as I do for delivering stable, satisfying work for my clients. </p>
+				<p>I'm an independent, multidisciplinary developer with a history of diverse, successful projects of varying scale.</p>
+				<p>Since 2001 I've gained significant experience crafting solutions for advertising, installations, game development, in-house tooling and mobile experiences, straddling the front and back ends with an emphasis on improving team cohesion and workflow.</p>
+				<p>I'm proud, driven, impassioned, quick to learn and result-oriented, caring as much about the process and the work environment as I do for delivering stable, satisfying work for my clients. </p>
 				<p>I believe strongly in open source software practices, which has made me fortunate enough to become a repeat speaker at the excellent <a href="http://reasons.to">Flash on the Beach / Reasons conferences</a> in Brighton.</p>
 			</intro>
 		</section>
@@ -75,7 +75,7 @@
 		<section>
 			<h4>Project highlights</h4>
 		</section>
-		<section ng-repeat="project in ctrl.projectModel.projects">
+		<section ng-repeat="project in projectModel.projects">
 			<div >
 				<h5>{{project.summary}}</h5>
 				<h4>{{project.title}}</h4>
@@ -91,7 +91,7 @@
 			<h4>Presence</h4>
 		</section>
 		<icons id="link-icons" >
-			<a class="presence-icon" ng-repeat="link in ctrl.linksModel.links" ref="{{link.url}}" target="_blank" >
+			<a class="presence-icon" ng-repeat="link in linksModel.links" href="{{link.url}}" target="_blank" >
 				<img ng-src="{{link.image}}" alt="{{link.name}}" />
 			</a>
 		</icons>

@@ -3,15 +3,17 @@
 	var model = { projects : [] };
 
 	var jsonResponseHandler = function(response){
-		var proj = response.data.projects;
-		model.projects = proj;
+		model.projects = response.data.projects;
+	};
+
+	var loadProjectList = function($http){
+		http = $http;
+		http.get( 'data/projects.json' ).then( jsonResponseHandler );
 	};
 
 	var projectDataService = function($http){
-		http = $http;
 		this.model = model;
-		http.get( 'js/data/projects.json' ).then( jsonResponseHandler );
-
+		loadProjectList($http, this);
 		return this;
 	};
 

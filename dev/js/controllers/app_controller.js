@@ -1,12 +1,10 @@
 (function(){
 
 	var deps = ["projectDataService", "presenceLinksService"];
-	var projectModel = { projects : [] };
-	var linksModel = { links : [] };
 
-	var resumeController = function(projectDataService, presenceLinksService){
-		this.projectModel = projectDataService.model;
-		this.linksModel = presenceLinksService.model;
+	var resumeController = function($scope, projectDataService, presenceLinksService){
+		$scope.projectModel = projectDataService.model;
+		$scope.linksModel = presenceLinksService.model;
 	}
 
 	angular
