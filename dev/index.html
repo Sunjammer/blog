@@ -73,8 +73,8 @@
 		<section>
 			<h4>Presence</h4>
 		</section>
-		<icons id="link-icons">
-			<a href="{{link.url}}" class="presence-icon" target="_blank" ng-repeat="link in ctrl.links">
+		<icons id="link-icons" class="presence-icon">
+			<a href="{{link.url}}" target="_blank" ng-repeat="link in ctrl.links">
 				<img ng-src="{{link.image}}" alt="{{link.name}}" />
 			</a>
 		</icons>
