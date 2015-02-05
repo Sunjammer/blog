@@ -33,8 +33,8 @@
 			"title":'DConsole',
 			"summary" : "Flash developer console and runtime tool platform",
 			"image" : "img/dconsole.jpg",
-			"body" : "<p>DConsole is a long running personal project, having been in development since 2006. Running primarily as a command-line interface layer that can be hooked into methods and properties of a running Flash application, it grew to include its own windowing system and plugin architecture, function as a general purpose extensible tooling platform for Flash developers.</p><p>Plugins offer functionality ranging from profiling displays, measuring, eyedropping and snapshotting tools to heavier things like network traffic inspectors and bizarro IRC clients.</p>",
-			"addendum" : 'Source available on <a href="https://github.com/furusystems/dconsole">GitHub</a>'
+			"body" : "<p>DConsole is a long running personal project, having been in development since 2006. Running primarily as a command-line interface layer that can be hooked into methods and properties of a running Flash application, it grew to include its own windowing system and plugin architecture, function as a general purpose extensible tooling platform for Flash developers.</p><p>Plugins offer functionality ranging from profiling displays, measuring, eyedropping and snapshotting tools to heavier things like network traffic inspectors and bizarro IRC clients.</p><p>A tinier Haxe library, disgustingly named Consolitis, is also <a href='https://github.com/furusystems/consolitis'>in progress</a>, attempting to straddle the problem of building a proper cross plat alternative.</p>",
+			"addendum" : 'Source available on <a href="https://github.com/furusystems/dconsole">GitHub</a>.'
 		},
 		{
 			"title":'Croissant Engine',

@@ -2,7 +2,7 @@
 	box-shadow: 0em 0.5em 2em #AAA;
 }
 @media (max-width: 768px) {
-	#link-icons.presence-icon{
-		display: inline-block; 
-	}
+    #link-icons.presence-icon a {
+        display: inline-block; 
+    }
 }
