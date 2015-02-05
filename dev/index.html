@@ -12,13 +12,8 @@
 		<script type="text/javascript" src="js/filters/projects_filters.js"></script>
 		<script type="text/javascript" src="js/services/presence_service.js"></script>
 		<script type="text/javascript" src="js/services/project_service.js"></script>
-
-		<script type="text/javascript" src="js/controllers/projects_ctrl.js"></script>
-		<script type="text/javascript" src="js/directives/projects_dir.js"></script>
-		<script type="text/javascript" src="js/controllers/presence_ctrl.js"></script>
-		<script type="text/javascript" src="js/directives/presence_dir.js"></script>
 	</head>
-	<body class="vanilla">
+	<body class="vanilla" ng-controller="ResumeController as ctrl">
 		<section>
 			<p>
 				<img src="img/portrait.jpg" />
@@ -59,29 +54,30 @@
 		</section>
 		<hr />
 
-		<project-view></project-view>
-		<hr/>
-		<project-view></project-view>
-		<hr/>
-		<project-view></project-view>
-		<hr/>
-		<project-view></project-view>
-		<hr/>
-		<project-view></project-view>
-		<hr/>
-		<project-view></project-view>
-		<hr/>
-		<project-view></project-view>
-		<hr/>
-		<project-view></project-view>
-		<hr/>
-		<project-view></project-view>
-		<hr/>
-		
+		<section>
+			<h4>Project highlights</h4>
+		</section>
+		<section ng-repeat="project in ctrl.projects">
+			<div >
+				<h5>{{project.summary}}</h5>
+				<h4>{{project.title}}</h4>
+				<div ng-show="{{project.image!=null}}" >
+					<img class="projectViewImage" ng-src="{{project.image}}"></img>
+					<br/><br/>
+				</div>
+				<p ng-show="{{project.body!=null}}" ng-bind-html="project.body | sanitize"></p>
+				<p ng-show="{{project.addendum!=null}}" ng-bind-html="project.addendum | sanitize"></p>
+				<hr/>
+			</div>
+		</section>
 		<section>
 			<h4>Presence</h4>
 		</section>
-		<presence-view></presence-view>
+		<icons class="presence-icons">
+			<a href="{{link.url}}" class="presence-icon" target="_blank" ng-repeat="link in ctrl.links">
+				<img ng-src="{{link.image}}" alt="{{link.name}}" />
+			</a>
+		</icons>
 
 		<footer>
 			<section>

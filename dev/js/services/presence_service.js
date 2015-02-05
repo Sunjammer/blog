@@ -33,6 +33,6 @@
 		return this;
 	};
 
-	angular.module("presence").factory("presenceLinksService", presenceLinksService);
+	angular.module("resume").factory("presenceLinksService", presenceLinksService);
 
 })();

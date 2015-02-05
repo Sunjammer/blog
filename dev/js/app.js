@@ -1,7 +1,12 @@
 (function(){
-	
-	angular.module("projects", []); //Submodule predefs
-	angular.module("presence", []); //Submodule predefs
-	angular.module("resume", ["projects","presence"]); //Application
+	//Application
 
+	var resumeController = function(projectDataService, presenceLinksService){
+		this.projects = projectDataService.projects;
+		this.links = presenceLinksService.links;
+	}
+
+	angular
+		.module("resume", [])
+		.controller("ResumeController", resumeController, ["projectDataService", "presenceLinksService"]);
 })();

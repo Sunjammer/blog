@@ -1,0 +1,13 @@
+<section>
+	<div ng-repeat="project in ctrl.projects">
+		<h4>{{project.title}}</h4>
+		<h5>{{project.summary}}</h5>
+		<div ng-show="{{project.image!=null}}" >
+			<img class="projectViewImage" ng-src="{{project.image}}"></img>
+			<br/><br/>
+		</div>
+		<p ng-show="{{project.body!=null}}" ng-bind-html="project.body | sanitize"></p>
+		<p ng-show="{{project.addendum!=null}}" ng-bind-html="project.addendum | sanitize"></p>
+		<hr/>
+	</div>
+</section>
