@@ -1,51 +1,97 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><link href='http://www.doomsday.no/css/main.css' rel='stylesheet' type='text/css'><title>index</title></head><body><h2 id="this-transparent-earth"><a name="user-content-this-transparent-earth" href="#this-transparent-earth" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>This Transparent Earth</h2>
-<p>Raw data output of Andreas Rønning.</p>
-<p><a href="http://google.com/+AndreasRonning">Google+</a><br />
-<a href="https://twitter.com/sunjammer">Twitter</a><br />
-<a href="https://soundcloud.com/doomsday">Soundcloud</a></p>
-<hr />
-<h3 id="index"><a name="user-content-index" href="#index" class="headeranchor-link"  aria-hidden="true"><span class="headeranchor"></span></a>Index</h3>
-<ul>
-<li>
-<p>ENTRY 0 - July 23rd 2011<br />
-<a href="http://www.doomsday.no/articles/jul232011.html">Thoughts on the Oslo attacks of July 22nd 2011</a></p>
-</li>
-<li>
-<p>ENTRY 1 - December 5th 2013  - Furu Systems Blog<br />
-<a href="http://blog.furusystems.com/2013/12/lets-clarify-haxe-and-openfl/">Let&rsquo;s clarify Haxe and OpenFL</a></p>
-</li>
-<li>
-<p>ENTRY 2 - January 22nd 2014 - Gamasutra<br />
-<a href="http://www.gamasutra.com/blogs/AndreasRonning/20140122/209047/Engine_is_nothing_without_content.php">On how a game engine is nothing without content</a></p>
-</li>
-<li>
-<p>ENTRY 3 - January 23rd 2014<br />
-<a href="http://www.doomsday.no/articles/jan232014.html">On how Haxe is shaping my coding style</a></p>
-</li>
-<li>
-<p>ENTRY 4 - February 2nd 2014 - Gamasutra<br />
-<a href="http://www.gamasutra.com/blogs/AndreasRonning/20140203/209941/Poisoning_the_well.php">On how F2P is poisoning the relationship between player and designer</a></p>
-</li>
-<li>
-<p>ENTRY 5 - February 9th 2014<br />
-<a href="http://www.doomsday.no/articles/feb92014.html">On Flappy Birds and the god damn Internet</a></p>
-</li>
-<li>
-<p>ENTRY 6 - April 6th 2014 - Gamasutra<br />
-<a href="http://www.gamasutra.com/blogs/AndreasRonning/20140406/214868/Castlevania_and_the_case_for_linearity.php">Castlevania, and the case for linearity</a></p>
-</li>
-<li>
-<p>ENTRY 7 - April 19th 2014<br />
-<a href="http://www.doomsday.no/articles/apr192014.html">My history with HaxeNME and OpenFL</a></p>
-</li>
-<li>
-<p>ENTRY 9 - Jul 14th 2014<br />
-<a href="http://www.doomsday.no/articles/flash2gpu/flash2gpu1.html">From Flash to GPU part 1</a></p>
-</li>
-<li>
-<p>ENTRY 10 - Jul 14th 2014<br />
-<a href="http://www.doomsday.no/articles/flash2gpu/flash2gpu2.html">From Flash to GPU part 2</a></p>
-</li>
-</ul>
-<hr />
-<p>Copyright © 2014 Doomsday Device Labs.</p></body></html>
+<!DOCTYPE html>
+<html ng-app="resume">
+	<!-- Built on Tyler Childs' Vanilla HTML (https://github.com/tylerchilds/Vanilla-HTML) -->
+	<head>
+		<title>Andreas R&oslash;nning</title>
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" href="css/vanilla.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="icon" type="image/png" href="img/favicon.ico">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
+		<script type="text/javascript" src="js/dependencies/showdown.min.js"></script>
+
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/filters/projects_filters.js"></script>
+		<script type="text/javascript" src="js/services/presence_service.js"></script>
+		<script type="text/javascript" src="js/services/project_service.js"></script>
+		<script type="text/javascript" src="js/directives/md_directive.js"></script>
+		<script type="text/javascript" src="js/controllers/md_controller.js"></script>
+		<script type="text/javascript" src="js/controllers/app_controller.js"></script>
+	</head>
+	<body class="vanilla" ng-controller="ResumeController as ctrl">
+		<section>
+			<p>
+				<img src="img/portrait.jpg" />
+			</p>
+			<header>
+				<h1>Andreas R&oslash;nning</h1>
+				<h5>Interactive arts and development</h5>
+			</header>
+		</section>
+		<hr />
+		<section>
+			<intro>
+				<p>I'm an independent, multidisciplinary developer with a history of diverse, successful projects of varying scale.</p>
+				<p>Since 2001 I've gained significant experience crafting solutions for advertising, installations, game development, in-house tooling and mobile experiences, straddling the front and back ends with an emphasis on improving team cohesion and workflow.</p>
+				<p>I'm proud, driven, impassioned, quick to learn and result-oriented, caring as much about the process and the work environment as I do for delivering stable, satisfying work for my clients. </p>
+				<p>My favorite job is supporting a team of developers, designers and artists: Having that immediate loop of iteration and feedback is incredibly rewarding, and seeing what a team can do with tools tailored to their needs never ceases to amaze.</p>
+				<p>I believe strongly in open source software practices, which has made me fortunate enough to become a repeat speaker at the excellent <a href="http://reasons.to">Flash on the Beach / Reasons conferences</a> in Brighton.</p>
+			</intro>
+		</section>
+		<hr />
+
+		<section>
+			<fields>
+				<h4>Expertise</h4>
+				<ul>
+					<li>Game design and development</li>
+					<li>Installations & expo</li>
+					<li>Front-end/UI programming</li>
+					<li>Tools & integration</li>
+				</ul>
+			</fields>
+			<technologies>
+				<h4>Technologies</h4>
+				<ul>
+					<li>Haxe, Java, JS, C# and AS3</li>
+					<li>Flash, AIR & .net</li>
+					<li>Unity3D</li>
+					<li>WebGL & GLES2</li>
+					<li>Android & iOS</li>
+				</ul>
+			</technologies>
+		</section>
+		<hr />
+
+		<section>
+			<h4>Project highlights</h4>
+		</section>
+		<section ng-repeat="project in projectModel.projects">
+			<div >
+				<h5>{{project.summary}}</h5>
+				<h4>{{project.title}}</h4>
+				<div ng-show="{{project.image!=null}}" >
+					<img class="projectViewImage" ng-src="{{project.image}}"></img>
+					<br/><br/>
+				</div>
+				<md ng-show="{{project.body!=null}}" url="{{project.body}}"></md>
+				<hr/>
+			</div>
+		</section>
+		<section>
+			<h4>Presence</h4>
+		</section>
+		<icons id="link-icons" >
+			<a class="presence-icon" ng-repeat="link in linksModel.links" href="{{link.url}}" target="_blank" >
+				<img ng-src="{{link.image}}" alt="{{link.name}}" />
+			</a>
+		</icons>
+
+		<footer>
+			<section>
+				<small>&copy; 2014, Andreas R&oslash;nning</small>
+			</section>
+		</footer>
+	</body>
+</html>
