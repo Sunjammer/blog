@@ -1,4 +1,4 @@
 (function(){
 	//Application
-	angular.module("resume", []);
+	angular.module("resume", ["youtube-embed"]);
 })();

@@ -1,6 +1,11 @@
 .projectViewImage{
 	box-shadow: 0em 0.5em 2em #AAA;
 }
+.projectViewVideo{
+	border: 0;
+	margin: 0;
+	box-shadow: 0em 0.5em 2em #AAA;
+}
 @media (max-width: 768px) {
     #link-icons .presence-icon {
         display: inline-block; 

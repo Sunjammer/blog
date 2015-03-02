@@ -2,22 +2,16 @@
 	"projects":
 		[
 			{
-				"title":"Statnett Nydalen, Oslo.",
-				"summary" : "Interactive exhibit",
-				"image" : "img/wall.jpg",
-				"body" : "statnett.md"
-			},
-			{
 				"title":"MIRA, Norwegian Maritime Museum, Oslo",
 				"summary" : "Visual programming tool and multiplayer game engine",
 				"image" : "img/mira2.jpg",
 				"body" : "mira.md"
 			},
 			{
-				"title":"Inky & Smudge",
-				"summary" : "Game engine, content creation tooling & support",
-				"image" : "img/is.jpg",
-				"body" : "inky.md"
+				"title":"Statnett Nydalen, Oslo.",
+				"summary" : "Interactive exhibit",
+				"image" : "img/wall.jpg",
+				"body" : "statnett.md"
 			},
 			{
 				"title":"Be Democracy, Nobel Peace Centre, Oslo",
@@ -26,16 +20,10 @@
 				"body" : "bedemocracy.md"
 			},
 			{
-				"title":"DConsole",
-				"summary" : "Flash developer console and runtime tool platform",
-				"image" : "img/dconsole.jpg",
-				"body" : "dconsole.md"
-			},
-			{
-				"title":"Croissant Engine",
-				"summary" : "Cross platform 2D game engine",
-				"image" : "img/croissant.jpg",
-				"body" : "croissant.md"
+				"title":"Delta",
+				"summary" : "Light tweening engine for Haxe",
+				"image" : null,
+				"body" : "delta.md"
 			},
 			{
 				"title":"Barrage",
@@ -44,16 +32,29 @@
 				"body" : "barrage.md"
 			},
 			{
-				"title":"Delta",
-				"summary" : "Light tweening engine for Haxe",
+				"title":"Croissant Engine",
+				"summary" : "Cross platform 2D game engine",
 				"image" : null,
-				"body" : "delta.md"
+				"video" : "PUidyhOpxAM",
+				"body" : "croissant.md"
 			},
 			{
 				"title":"ShaderBlox",
 				"summary" : "GLSL shader macro tools for Haxe",
 				"image" : "img/shaderblox.jpg",
 				"body" : "shaderblox.md"
+			},
+			{
+				"title":"Inky & Smudge",
+				"summary" : "Game engine, content creation tooling & support",
+				"image" : "img/is.jpg",
+				"body" : "inky.md"
+			},
+			{
+				"title":"DConsole",
+				"summary" : "Flash developer console and runtime tool platform",
+				"image" : "img/dconsole.jpg",
+				"body" : "dconsole.md"
 			}
 		]
 }
